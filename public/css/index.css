@@ -1,7 +1,50 @@
-html {
-  max-width: 720px;
+.page {
+	background: white;
+	padding: 0 15px;
+
+	display: flex;
+	justify-content: center;
 }
 
-body {
-  background: #fff;
+.page_content {
+	max-width: 930px;
+	width: 100%;
+
+	display: inline-flex;
+	flex-direction: column;
+	flex: wrap;
+
+	gap: 80px;
+
+	padding-top: 74px;
+}
+
+/* ========================================= */
+
+.button {
+	display: block;
+	font-size: 32px;
+	text-decoration: none;
+	padding: 12px 24px;
+	border-radius: 25px;
+	gap: 24px 24px;
+
+	transition: opacity 1s, background-color 1s, color 2s;
+
+	color: white;
+	background-color: green;
+
+	max-width: 250px;
+	width: 100%;
+}
+
+.button:hover {
+	opacity: 0.5;
+	background-color: rgba(255, 255, 0, 0.381);
+	color: green;
+}
+
+.title {
+	font-size: 100px;
+	color: rgb(1, 72, 1);
 }
