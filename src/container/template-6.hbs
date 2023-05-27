@@ -54,7 +54,9 @@
 	{{#each list}}
 	<div class="updates_list">
 		<div class="updates_list_1">
-			<span class="updates_img" id="{{id}}">32x32</span>
+			<span
+				class="updates_img  {{#if @first}}color_blue {{else}}color_pink{{/if}} {{#if @last}}color_purple{{/if}}"
+				id="{{id}}">32x32</span>
 		</div>
 		<div class="updates_list_2">
 			<strong class="updates_name">{{nickname}}</strong>
@@ -71,8 +73,12 @@
 
 <div class="expirience">
 	{{#with expirience}}
-	<h2 class="expirience_title">{{title}}</h2>
-	<div class="expirience_badge">{{badge}}</div>
+	<div class="expirience_header">
+		<h2 class="expirience_title">{{title}}</h2>
+		<div class="expirience_badge">{{badge}}</div>
+
+	</div>
+
 	<div class="expirience_list">
 		{{#each list}}
 		<div class="expirience_card">
