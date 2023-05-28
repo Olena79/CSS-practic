@@ -4,7 +4,11 @@
 		<div class="article_card_img">
 			<img src="{{photo}}" class="article_img" alt="photo">
 			{{#if isNew}}
-			<span class="article_card_badge" id="{{id}}">NEW</span>
+			<div class="article_card_badge" id="{{id}}">
+				<span class="article_card_badge_text">
+					NEW
+				</span>
+			</div>
 			{{/if}}
 		</div>
 
