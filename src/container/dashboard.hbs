@@ -32,20 +32,20 @@
 	<div class="page page--dashboard">
 
 
-		<aside class="page__aside aside vertical">
-			<div class="aside__logo">Sidebar</div>
+		<aside class="page__aside aside vertical vertical--big">
+			<div class="text aside__logo">Sidebar</div>
 			<nav class="vertical vertical--small">
 				<a href="#" class="nav-button nav-button--active click">
 					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/home.svg')"></span>
-					<span class="text text-light">Home</span>
+					<span class="text text--light">Home</span>
 				</a>
 				<a href="#" class="nav-button click">
 					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/orders.svg')"></span>
-					<span class="text text-light">Orders</span>
+					<span class="text text--light">Orders</span>
 				</a>
 				<a href="#" class="nav-button click">
 					<span class="icon nav-button__icon" style="background-image: url('/svg/nav/products.svg')"></span>
-					<span class="text text-light">Products</span>
+					<span class="text text--light">Products</span>
 				</a>
 			</nav>
 		</aside>
@@ -53,18 +53,216 @@
 
 		<header class="header">
 			<div class="layout header__content text--small">
-				<div class="header__search">
-					<input type="text" placeholder="Search" class="field header__search field--header">
+				<div class="header__search relative">
+					<input type="text" placeholder="Search" class="text field-big field--header">
 					<span class="icon header__icon-search" style="background-image: url('/svg/header/search.svg')"></span>
 					<span class="icon icon--header-settings click" style="background-image: url('/svg/header/settings.svg')"></span>
 				</div>
-				
+				<div class="header__icons">
+					<span class="icon icon--header-network click" style="background-image: url('/svg/header/network.svg')"></span>
+					<span class="icon icon--header-xa click" style="background-image: url('/svg/header/xa.svg')"></span>
+					<span class="icon icon--header-network click" style="background-image: url('/svg/header/bell.svg')"></span>
+				</div>
 			</div>
 		</header>
 
 
-		<main class="main">123</main>
+		<main class="main">
+			<div class="layout">
 
+				<section class="box analitic__block">
+					<div class="analitic analitic--double analitic--purple">
+						<span class="icon analitic__button back--purple click" style="background-image: url('/svg/analitic/money.svg')"></span>
+
+						<div class="relative vertical vertical--small">
+							<div class="analitic__title text text--light">$500.00</div>
+							<div class="analitic__info text--small text--lighter">Total earning</div>
+							<span class="icon analitic__arrow click" style="background-image: url('/svg/analitic/blue-arrow.svg')"></span>
+						</div>
+					</div>
+
+					<div class="analitic analitic--double analitic--blue">
+						<span class="icon analitic__button back--blue click" style="background-image: url('/svg/analitic/order.svg')"></span>
+
+						<div class="relative vertical vertical--small">
+							<div class="analitic__title text text--light">$961</div>
+							<div class="analitic__info text--small text--lighter">Total Order</div>
+						</div>
+					</div>
+
+					<div class="analitic analitic--small analitic--blue">
+						<span class="icon analitic__button back--blue click" style="background-image: url('/svg/analitic/money.svg')"></span>
+
+						<div class="relative vertical vertical--small">
+							<div class="analitic__title-small text text--light">$203k</div>
+							<div class="analitic__info text--small text--lighter">Total Income</div>
+						</div>
+					</div>
+
+					
+					<div class="analitic analitic--small analitic--light">
+						<span class="icon analitic__button back--yellow click" style="background-image: url('/svg/analitic/shop.svg')"></span>
+
+						<div class="relative vertical vertical--small">
+							<div class="analitic__title-small text">$203k</div>
+							<div class="analitic__info text--small text--grey">Total Income</div>
+						</div>
+					</div>
+					
+				</section>
+
+			</div>
+
+
+			<div class="main__double">
+
+				<section class="purchase__box box layout">
+
+					<div class="text text--heading">
+						Purchase list
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="purchase__customer">
+						<div class="customer__block">
+							<div class="text">ID437661</div>
+							<div class="text">May 11, 2023, 14:21</div>
+						</div>
+						<div class="customer__block">
+							<div class="text">AirOn ProCam</div>
+							<div class="text">7/8 USB Type-C</div>
+						</div>
+						<div class="customer__block">
+							<div class="text">132.32 EUR</div>
+							<div class="text text--warning">Not paid</div>
+						</div>
+						<div class="customer__block">
+							<div class="text">Customer</div>
+							<div class="text">robin@com.de</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="purchase__customer">
+						<div class="customer__block">
+							<div class="text">ID437661</div>
+							<div class="text">May 11, 2023, 14:21</div>
+						</div>
+						<div class="customer__block">
+							<div class="text">PHILIPS Essential</div>
+							<div class="text">HD9200/90</div>
+						</div>
+						<div class="customer__block">
+							<div class="text">543 USD</div>
+							<div class="text text--success">Pay by  Stripe</div>
+						</div>
+						<div class="customer__block">
+							<div class="text">Customer</div>
+							<div class="text">dima@com.ua</div>
+						</div>
+					</div>
+
+				</section>
+
+
+				<section class="payment__box box layout">
+
+					<div class="text text--heading">
+						Payment
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="radio">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="check" checked>
+							<label class="form-check-label text" for="check">
+								Credit card
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="check">
+							<label class="form-check-label text" for="check">
+								Debit card
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="check">
+							<label class="form-check-label text" for="check">
+								PayPal
+							</label>
+						</div>
+					</div>
+
+					<div class="form__block">
+						<div class="form">
+							<label for="payment" class="text">Name on card</label>
+							<input type="text" class="field header__search" name="payment">
+						</div>
+
+						<div class="form">
+							<label for="payment" class="text">Credit card number</label>
+							<input type="number" class="field header__search" name="payment">
+						</div>
+
+						<div class="form">
+							<label for="payment" class="text">Expiration</label>
+							<input type="date" class="field header__search" name="payment">
+						</div>
+
+						<div class="form">
+							<label for="payment" class="text">CVV</label>
+							<input type="number" class="field header__search" name="payment">
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="form__block-s">
+						<div class="form__s">
+							<label for="payment" class="text">Country</label>
+							<div class="relative click">
+								<div class="field relative field--select">
+									<span class="text">Choose...</span>
+								</div>
+
+								<select name="country" class="form-select text field__select">
+									<option value="ukraine">Ukraine</option>
+									<option value="poland">Poland</option>
+									<option value="canada">Canada</option>
+									<option value="usa">USA</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form__s">
+							<label for="payment" class="text">State</label>
+							<div class="relative click">
+								<div class="field relative field--select">
+									<span class="text">Choose...</span>
+								</div>
+
+								<select name="country" class="form-select text field__select">
+									<option value="ukraine">Ukraine</option>
+									<option value="poland">Poland</option>
+									<option value="canada">Canada</option>
+									<option value="usa">USA</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<a href="#" class="button text text--light nav-button--active click">Continue to checkout</a>
+
+				</section>
+
+			</div>
+
+		</main>
 
 	</div>
 </body>
